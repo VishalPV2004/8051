@@ -62,7 +62,7 @@ void main()
         if (rx_flag == 1) {
             rx_flag = 0;
 
-            delay(80);
+            delay(280);  //Wait till the array fills
             if (i >= 2 && a[0] == 'O' && a[1] == 'N') {
                 clear();
                 lcd_cmd(0x01);
