@@ -63,14 +63,14 @@ void main()
             rx_flag = 0;
 
             delay(80);
-            if (a[0] == 'O' && a[1] == 'N') {
+            if (i >= 2 && a[0] == 'O' && a[1] == 'N') {
                 clear();
                 lcd_cmd(0x01);
                 lcd_cmd(0x80);
                 lcd_str(" BULB ON ");
                 l1 = 1;
             }
-            else if (a[0] == 'O' && a[1] == 'F' && a[2] == 'F') {
+            else if (i >= 3 && a[0] == 'O' && a[1] == 'F' && a[2] == 'F') {
                 clear();
                 lcd_cmd(0x01);
                 lcd_cmd(0x80);
