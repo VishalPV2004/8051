@@ -5,8 +5,6 @@ void lcd_cmd(unsigned char s);
 void lcd_data(unsigned char s);
 void lcd_str(unsigned char *s);
 void lcd_init();
-unsigned char GetTemperatureAvg();
-unsigned char GetTemperature();
 
 sbit rs = P2^0;
 sbit en = P2^1;
